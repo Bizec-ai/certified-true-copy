@@ -9,6 +9,8 @@ Four steps, in this order:
 3. **Certify on the last page.** A block with the heading, date, signature line, and the certifier's name and membership/registration line.
 4. **Lock it.** AES-256 with an empty user password (so anyone can open and print) and print-only permissions — no editing, no annotating, no text copying, no page reassembly.
 
+![A certified page: the diagonal stamp sits in white space, clear of the text](demo/certified-page-1.png)
+
 ```bash
 pip install pymupdf
 python -m ctc.cli bundle.pdf --name "A. Person" --membership "Membership No. 0000000"
