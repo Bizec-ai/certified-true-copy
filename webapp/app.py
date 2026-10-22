@@ -67,7 +67,7 @@ DEFAULT_CERTIFIER_INSTITUTION = os.environ.get("CTC_INSTITUTION", "")
 DEFAULT_CERTIFIER_ADDRESS = os.environ.get("CTC_ADDRESS", "")
 DEFAULT_CERTIFIER_PHONE = os.environ.get("CTC_PHONE", "")
 
-app = FastAPI(title="Charmey Certified True Copy")
+app = FastAPI(title="Certified True Copy")
 
 # ---------------------------------------------------------------- access gate
 # Single-user login.  No record, document or preview is reachable without a
@@ -135,7 +135,7 @@ def _purge_previews() -> None:
 
 LOGIN_PAGE = """<!doctype html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Charmey CTC - 登入</title>
+<title>Certified True Copy - 登入</title>
 <style>
 :root{--teal:#0ABAB5;--ink:#0f2b33;--line:#e3eaef}
 *{box-sizing:border-box}
@@ -166,7 +166,7 @@ button:active{opacity:.85}
       display:flex;align-items:center;justify-content:center}
 </style></head><body>
 <form class="card" method="post" action="login">
-  <h1>Charmey 認證副本</h1>
+  <h1>核證副本</h1>
   <p class="sub">私人工具 - 請輸入密碼</p>
   __ERR__
   <input type="password" name="password" placeholder="密碼" autofocus required>
@@ -283,7 +283,7 @@ HTML = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Charmey — Certified True Copy</title>
+<title>Certified True Copy</title>
 <style>
 :root{--teal:#0ABAB5;--teal-dark:#089b9b;--bg:#f5f7fa;--border:#e8edf2;--text:#1a2b3a;--muted:#5a6a7a}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -324,7 +324,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:24px}
 </head>
 <body>
 <header>
-  <h1>📄 Charmey — Certified True Copy 核證副本</h1>
+  <h1>📄 Certified True Copy 核證副本</h1>
   <p>上傳任何認證指引 → 自動分析要求 → 拖位 + 指尖簽名 → 一鍵出鎖定核證副本（自動記帳）</p>
 </header>
 <main>
@@ -414,7 +414,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:24px}
     <a href="jobs" style="color:var(--teal);font-weight:600;font-size:14px">睇全部記錄 →</a>
   </div>
 </main>
-<footer>Charmey AI CoSec · data stays on your device 🔒</footer>
+<footer>Data stays on your device 🔒</footer>
 
 <script>
 const canvas = document.getElementById('sigpad');
