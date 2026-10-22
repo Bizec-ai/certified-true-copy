@@ -4,3 +4,13 @@ __pycache__/
 build/
 dist/
 .venv/
+
+# runtime state — never commit these
+webapp/.ctc_pass
+webapp/.ctc_secret
+webapp/.jobs_key
+webapp/data/
+webapp/signature.png
+*.db
+*.pdf
+!demo/*.pdf
